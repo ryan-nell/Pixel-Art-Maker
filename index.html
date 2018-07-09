@@ -30,12 +30,28 @@
       <!-- Size and colour container -->
       <div class="container input-container">
         <!-- Height & Width input section -->
-        <div class="row">
-
+          <form>
+            <div class="form-row">
+              <!-- Height input field -->
+              <div class="col-4 offset-1">
+                <label class="sr-only" for="height-input">Height</label>
+                <input type="number" class="form-control" id="height-input" placeholder="Height:">
+              </div>
+              <!-- Width input field -->
+              <div class="col-4">
+                <label class="sr-only" for="width-input">Width</label>
+                <input type="number" class="form-control" id="width-input" placeholder="Width:">
+              </div>
+              <!-- Input sumbit button -->
+              <div class="col-3">
+                <button type="submit" class="btn btn-primary">Submit Grid</button>
+              </div>
+            </div>
+          </form>
         </div>
         <!-- Color picker section -->
         <div class="row">
-
+ 
         </div>
       </div>
       <!-- Grid container -->
