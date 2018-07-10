@@ -1,21 +1,40 @@
-.header-container{
+.header-container {
   padding: 50px;
 }
 
-.main-heading{
+.main-heading {
   text-align: center;
 }
 
-.height-width-row{
+.height-width-row {
   margin-left: 60px;
 }
 
-.colors{
+.colors {
   padding: 25px;
   text-align: center;
   margin-left: 100px;
 }
 
-.colour-picker{
+.colour-picker {
   padding: 0px !important;
+}
+
+table,
+tr,
+td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  width: 20px;
 }
