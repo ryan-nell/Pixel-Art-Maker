@@ -28,7 +28,7 @@ function makeGrid(event) {
     gridTable.appendChild(newRowTR);
 
     //Call the colour function.
-    //selectColour();
+    selectColour();
     event.preventDefault();
   }
 }
