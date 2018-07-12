@@ -33,6 +33,19 @@ function makeGrid(event) {
   }
 }
 
+//Select colour functions
+function selectColour(){
+  let selectTile = document.getElementsByTagName('td');
+  //loop to iterate through each TD element
+  for(let i =0; i < selectTile.length; i++){
+    //event listener that allows each TD elements background colour to change using a click
+    selectTile[i].addEventListener('click', function(){
+      let chosenColour = document.querySelector('#colour-picker-id').value;
+      selectTile[i].style.backgroundColor = chosenColour;
+    });
+  }
+}
+
 //Function to clear the generated grid
 function clearGrid(){
   const removeRow = document.querySelectorAll('tr');
