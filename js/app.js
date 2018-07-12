@@ -3,6 +3,8 @@
 const submitButton = document.querySelector('.submit-button');
 submitButton.addEventListener('click', makeGrid);
 
+
+
 // Function to create the grid
 function makeGrid(event) {
   // Call function to clear the grid
@@ -26,7 +28,15 @@ function makeGrid(event) {
     gridTable.appendChild(newRowTR);
 
     //Call the colour function.
-    selectColour();
+    //selectColour();
     event.preventDefault();
+  }
+}
+
+//Function to clear the generated grid
+function clearGrid(){
+  const removeRow = document.querySelectorAll('tr');
+  for(let i = 0; i < removeRow.length; i++){
+    removeRow[i].remove();
   }
 }
